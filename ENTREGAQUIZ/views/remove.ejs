@@ -1,0 +1,23 @@
+
+<script language="JavaScript">
+	function confirmacion(){ 
+			var r = confirm('¿Estas seguro de que quieres borrar la pregunta?');
+			if (r==true){ 
+			   document.formulario.submit();
+			} 
+			else location.href= "/index";
+			}
+	</script>
+
+  <form name="formulario" method="delete" action="/borrar"> 
+    Seleccione la pregunta que desea borrar <p>       
+    <select name="pregunta">
+       <% var i; %>
+       <% for (i=0;i < quizes.length; i++) { %>
+         <option><%= quizes[i].pregunta %></option>
+       <% } %>
+    </select>
+	
+    <input type="button" onclick="confirmacion()" value="Borrar Pregunta">
+
+ </form>

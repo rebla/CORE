@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"><title> Quiz </title>
+  <link rel='stylesheet' type='text/css' href='/stylesheets/style.css' />
+  <link rel='stylesheet' 
+        type='text/css'
+        media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+        href='/stylesheets/wide.css' />
+  <link rel='stylesheet'
+        type='text/css'
+        media='only screen and (max-width: 480px)' 
+        href='/stylesheets/smartphone.css' />
+  
+</head> 
+<body>
+<div id="page-wrap">
+  <header class="main" id="h1">
+    <h2>Quiz: el juego de las preguntas</h2>
+  </header>
+
+  <nav class="main" id="n1">
+    <span><a href="/index">Preguntar</a></span>
+    <span><a href="/new">Crear</a></span>
+    <span><a href="/select">Editar</a></span>
+    <span><a href="/remove">Borrar</a></span>
+  </nav>
+
+  <section class="main" id="s1">
+    <div id="cont"><%- body %></div>
+  </section>
+
+  <footer class="main" id="f1">
+    <a href="http://es.wikipedia.org/wiki/Quiz">
+      ¿Que es un Quiz?</a>
+  </footer>
+</div>
+</body> 
+</html>

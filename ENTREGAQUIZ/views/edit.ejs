@@ -1,0 +1,9 @@
+  <p>
+  <form method="post" action="/update">
+    <input type="hidden" name="_method" value="put"/><p>
+    <input type="hidden" name="id" value="<%= id %>"/><p>
+    Edite la pregunta: <p>       
+    Pregunta: <input type="text" name="pregunta" value="<%= pregunta %>"/><p>
+    Respuesta: <input type="text" name="respuesta" value="<%= respuesta %>"/><p>
+    <input type="submit" value="Actualizar">
+  </form>

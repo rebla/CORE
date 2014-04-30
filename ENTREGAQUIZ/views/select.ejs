@@ -1,0 +1,11 @@
+  <p>
+  <form method="get" action="/edit"> 
+    Seleccione la pregunta que desea editar <p>       
+    <select name="pregunta">
+       <% var i; %>
+       <% for (i=0;i < quizes.length; i++) { %>
+         <option><%= quizes[i].pregunta %></option>
+       <% } %>
+    </select> <p>
+    <input type="submit" value="Editar Pregunta">
+  </form>

@@ -1,0 +1,11 @@
+  <p>
+  <form method="get" action="/show">        
+    <select name="pregunta">
+       <% var i; %>
+       <% for (i=0;i < quizes.length; i++) { %>
+         <option><%= quizes[i].pregunta %></option>
+       <% } %>
+    </select> <p>
+    <input type="text" name="respuesta" value="Responda aquí"/>
+    <input type="submit" value="Enviar">
+  </form>
